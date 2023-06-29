@@ -38,4 +38,9 @@ class UnitTestChess(TestCase): # testing true movements of each element.
         result = bishop.checker(0, 2, 2, 0)
         assert result == False
 
+    def test_quinn(test_case):
+        quinn = Quinn(0)
+        result = quinn.checker(0, 3, 4, 7)
+        assert result == False
+
 main()
