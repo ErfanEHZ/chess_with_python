@@ -21,4 +21,11 @@ class ComponentTestChess(TestCase):
         result = t.can_beat(7, 4) #coordinates of king
         assert result == False
 
+
+class UnitTestChess(TestCase): # testing true movements of each element.
+    def test_layda(test_case):
+        ladya = Ladya(0)
+        result = ladya.checker(0, 0, 1, 0)
+        assert result == True
+
 main()
