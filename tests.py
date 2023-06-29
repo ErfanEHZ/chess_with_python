@@ -48,4 +48,9 @@ class UnitTestChess(TestCase): # testing true movements of each element.
         result = king.checker(0, 4, 1, 4)
         assert result == True
 
+    def test_pawn(test_case):
+        pawn = Pawn(0)
+        result = pawn.checker(1, 2, 2, 2)
+        assert result == True
+
 main()
