@@ -11,5 +11,10 @@ class ComponentTestChess(TestCase):
         t.recoil_board(1) # call undo function
         third = t.reboard # third state
         assert second != third
-    
+
+def test_mat(test_case):
+        res = t.mat()
+        # game continues until a True or False response
+        assert type(res) != bool
+
 main()
