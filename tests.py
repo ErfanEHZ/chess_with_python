@@ -43,4 +43,9 @@ class UnitTestChess(TestCase): # testing true movements of each element.
         result = quinn.checker(0, 3, 4, 7)
         assert result == False
 
+    def test_king(test_case):
+        king = King(0, 0, 4)
+        result = king.checker(0, 4, 1, 4)
+        assert result == True
+
 main()
