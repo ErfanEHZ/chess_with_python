@@ -33,4 +33,9 @@ class UnitTestChess(TestCase): # testing true movements of each element.
         result = horse.checker(0, 1, 2, 0)
         assert result == True
 
+    def test_bishop(test_case):
+        bishop = Bishop(0)
+        result = bishop.checker(0, 2, 2, 0)
+        assert result == False
+
 main()
