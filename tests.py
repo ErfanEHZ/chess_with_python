@@ -28,4 +28,9 @@ class UnitTestChess(TestCase): # testing true movements of each element.
         result = ladya.checker(0, 0, 1, 0)
         assert result == True
 
+    def test_horse(test_case):
+        horse = Horse(0)
+        result = horse.checker(0, 1, 2, 0)
+        assert result == True
+
 main()
