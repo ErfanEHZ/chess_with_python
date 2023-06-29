@@ -12,9 +12,13 @@ class ComponentTestChess(TestCase):
         third = t.reboard # third state
         assert second != third
 
-def test_mat(test_case):
+    def test_mat(test_case):
         res = t.mat()
         # game continues until a True or False response
         assert type(res) != bool
+
+    def test_kish(test_case):
+        result = t.can_beat(7, 4) #coordinates of king
+        assert result == False
 
 main()
